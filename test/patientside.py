@@ -5,16 +5,15 @@ import datetime
 driver = webdriver.Firefox()
 
 
-driver.get("http://127.0.0.1:3000/")
+driver.get("https://xenodochial-gates-c9614f.netlify.app")
 patientbtn = driver.find_element_by_xpath('/html/body/div/div/div[1]/div[1]/div/a[2]/button').click()
 time.sleep(3)
 patientid = driver.find_element_by_xpath('/html/body/div/div/div/div[3]/div[2]/form/div[1]/input')
-patientid.send_keys('7097be37-1f2b-4fa9-944d-18c2d8d0a441')
+patientid.send_keys('459b8fe2-b922-433f-a598-3a7aa9ce48d4')
 time.sleep(3)
 signinbtn = driver.find_element_by_xpath('/html/body/div/div/div/div[3]/div[2]/form/div[2]/button').click()
 time.sleep(3)
-#driver.find_element_by_link_text("Logout").click()
-#time.sleep(1)
+
 gend = driver.find_element_by_xpath('/html/body/div/div/div/div/section/div/div/div[2]/section/div/div[1]/div[1]/button')
 gend.click()
 time.sleep(3)
