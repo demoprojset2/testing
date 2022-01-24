@@ -11,9 +11,9 @@
         <div class="row">
             <div class="col-xs-12">
                 <h2 class="text-capitalize">Unittest Results</h2>
-                <p class='attribute'><strong>Start Time: </strong>2022-01-24 00:12:35</p>
-                <p class='attribute'><strong>Duration: </strong>17.45 s</p>
-                <p class='attribute'><strong>Summary: </strong>Total: 2, Pass: 0, Fail: 1, Error: 1</p>
+                <p class='attribute'><strong>Start Time: </strong>2022-01-24 10:59:58</p>
+                <p class='attribute'><strong>Duration: </strong>27.01 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 2, Pass: 1, Fail: 1</p>
             </div>
         </div>
         <div class="row">
@@ -37,19 +37,19 @@
                             </td>
                         </tr>
                         <tr style="display:none;">
-                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AssertionError: 'http://127.0.0.1:3000/sign-in' != 'http://127.0.0.1:3000/docdash'
-- http://127.0.0.1:3000/sign-in
-?                        ^^^^^^
-+ http://127.0.0.1:3000/docdash
-?                       +++++ ^
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AssertionError: 'https://onlineehrproj.netlify.app/sign-in' != 'https://onlineehrproj.netlify.app/docdash'
+- https://onlineehrproj.netlify.app/sign-in
+?                                    ^^^^^^
++ https://onlineehrproj.netlify.app/docdash
+?                                   +++++ ^
 </p><p style="color:maroon;">Traceback (most recent call last):
   File "Drlogintest.py", line 38, in test_drinvalidlogin
-    self.assertEqual(self.driver.current_url, "http://127.0.0.1:3000/docdash")
-AssertionError: 'http://127.0.0.1:3000/sign-in' != 'http://127.0.0.1:3000/docdash'
-- http://127.0.0.1:3000/sign-in
-?                        ^^^^^^
-+ http://127.0.0.1:3000/docdash
-?                       +++++ ^
+    self.assertEqual(self.driver.current_url, "https://onlineehrproj.netlify.app/docdash")
+AssertionError: 'https://onlineehrproj.netlify.app/sign-in' != 'https://onlineehrproj.netlify.app/docdash'
+- https://onlineehrproj.netlify.app/sign-in
+?                                    ^^^^^^
++ https://onlineehrproj.netlify.app/docdash
+?                                   +++++ ^
 
 Drlogintest.py:28: DeprecationWarning: find_element_by_* commands are deprecated. Please use find_element() instead
   userid=self.driver.find_element_by_xpath('//*[@id="name"]')
@@ -60,40 +60,17 @@ Drlogintest.py:34: DeprecationWarning: find_element_by_* commands are deprecated
 </p>
                             </td>
                         </tr>
-                        <tr class='warning'>
+                        <tr class='success'>
                             <td class="col-xs-10">test_drvalidlogin</td>
                             <td class="col-xs-1">
-                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
                             </td>
                             <td class="col-xs-1">
-                                <button class="btn btn-default btn-xs">View</button>
-                            </td>
-                        </tr>
-                        <tr style="display:none;">
-                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">WebDriverException: Message: Failed to decode response from marionette
-</p><p style="color:maroon;">Traceback (most recent call last):
-  File "Drlogintest.py", line 22, in test_drvalidlogin
-    self.assertEqual(self.driver.current_url, "http://127.0.0.1:3000/docdash")
-  File "/home/i1539/anaconda3/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 914, in current_url
-    return self.execute(Command.GET_CURRENT_URL)['value']
-  File "/home/i1539/anaconda3/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 424, in execute
-    self.error_handler.check_response(response)
-  File "/home/i1539/anaconda3/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 247, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.WebDriverException: Message: Failed to decode response from marionette
-
-Drlogintest.py:12: DeprecationWarning: find_element_by_* commands are deprecated. Please use find_element() instead
-  userid=self.driver.find_element_by_xpath('//*[@id="name"]')
-Drlogintest.py:15: DeprecationWarning: find_element_by_* commands are deprecated. Please use find_element() instead
-  password=self.driver.find_element_by_xpath('//*[@id="password"]')
-Drlogintest.py:18: DeprecationWarning: find_element_by_* commands are deprecated. Please use find_element() instead
-  signin=self.driver.find_element_by_xpath('//*[@id="root"]/div/div/div[3]/div/form/div[3]/button')
-</p>
                             </td>
                         </tr>
                         <tr>
                             <td colspan="3">
-                                Total: 2, Pass: 0, Fail: 1, Error: 1 -- Duration: 17.45 s
+                                Total: 2, Pass: 1, Fail: 1 -- Duration: 27.01 s
                             </td>
                         </tr>
                     </tbody>

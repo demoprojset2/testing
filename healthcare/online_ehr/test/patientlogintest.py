@@ -6,21 +6,21 @@ import unittest
 class login(unittest.TestCase):
 
     def test_validloginp(self):
-        self.driver = webdriver.Chrome()
-        self.driver.get("http://127.0.0.1:3000/patient-login") 
+        self.driver = webdriver.Firefox()
+        self.driver.get("https://onlineehrproj.netlify.app/patient-login") 
         time.sleep(1)
         userid=self.driver.find_element_by_xpath('/html/body/div/div/div/div[3]/div[2]/form/div[1]/input')
-        userid.send_keys("520cbc11-77ff-4eef-bb14-27aa05a68f08")
+        userid.send_keys("459b8fe2-b922-433f-a598-3a7aa9ce48d4")
         time.sleep(1)
         signin=self.driver.find_element_by_xpath('/html/body/div/div/div/div[3]/div[2]/form/div[2]/button')
         signin.click()
         time.sleep(2)
   
-        self.assertEqual(self.driver.current_url, "http://127.0.0.1:3000/patient-dashboard/520cbc11-77ff-4eef-bb14-27aa05a68f08")
+        self.assertEqual(self.driver.current_url, "https://onlineehrproj.netlify.app/patient-dashboard/459b8fe2-b922-433f-a598-3a7aa9ce48d4")
    
     def test_invalidloginp(self):
-        self.driver = webdriver.Chrome()
-        self.driver.get("http://127.0.0.1:3000/patient-login") 
+        self.driver = webdriver.Firefox()
+        self.driver.get("hhttps://onlineehrproj.netlify.app/patient-login") 
         time.sleep(1)
         userid=self.driver.find_element_by_xpath('/html/body/div/div/div/div[3]/div[2]/form/div[1]/input')
         userid.send_keys("renu")
@@ -29,7 +29,7 @@ class login(unittest.TestCase):
         signin.click()
         time.sleep(2)
   
-        self.assertEqual(self.driver.current_url, "http://127.0.0.1:3000/patient-dashboard/")
+        self.assertEqual(self.driver.current_url, "https://onlineehrproj.netlify.app/patient-dashboard/")
 
           
        
