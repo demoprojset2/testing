@@ -8,7 +8,7 @@ import datetime
 driver = webdriver.Firefox()
 
 # driver.get('http://127.0.0.1:3000/sign-in/')
-driver.get("https://xenodochial-gates-c9614f.netlify.app")
+driver.get("https://onlineehrproj.netlify.app/")
 
 doctorsbtn = driver.find_element_by_xpath('//*[@id="header"]/div/a[1]/button')
 doctorsbtn.click()
@@ -16,7 +16,7 @@ time.sleep(1)
 
 #register
 user = driver.find_element_by_id('name')
-user.send_keys("Sparsh")
+user.send_keys("Sparsh13")
 time.sleep(0.5)
 
 firstname = driver.find_element_by_id('firstname')
@@ -43,7 +43,7 @@ conpassword.send_keys("sparshgoyal")
 time.sleep(1)
 
 email = driver.find_element_by_id('email')
-email.send_keys("demo2@gmail.com")
+email.send_keys("demo3@gmail.com")
 time.sleep(1)
 
 
@@ -57,7 +57,7 @@ time.sleep(2)
 
 #login
 name=driver.find_element_by_id("name")
-name.send_keys("demo2@gmail.com")
+name.send_keys("demo3@gmail.com")
 
 passw=driver.find_element_by_id("password")
 passw.send_keys("sparshgoyal")

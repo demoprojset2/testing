@@ -5,7 +5,7 @@ import datetime
 driver = webdriver.Firefox()
 
 
-driver.get("https://xenodochial-gates-c9614f.netlify.app")
+driver.get("https://onlineehrproj.netlify.app/")
 patientbtn = driver.find_element_by_xpath('/html/body/div/div/div[1]/div[1]/div/a[2]/button').click()
 time.sleep(3)
 patientid = driver.find_element_by_xpath('/html/body/div/div/div/div[3]/div[2]/form/div[1]/input')

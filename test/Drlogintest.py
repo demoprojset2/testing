@@ -7,7 +7,7 @@ class login(unittest.TestCase):
 
     def test_drvalidlogin(self):
         self.driver = webdriver.Firefox()
-        self.driver.get("https://xenodochial-gates-c9614f.netlify.app/sign-in") 
+        self.driver.get("https://onlineehrproj.netlify.app/sign-in") 
         time.sleep(1)
         userid=self.driver.find_element_by_xpath('//*[@id="name"]')
         userid.send_keys("demo2@gmail.com")
@@ -19,11 +19,11 @@ class login(unittest.TestCase):
         signin.click()
         time.sleep(2)
   
-        self.assertEqual(self.driver.current_url, "https://xenodochial-gates-c9614f.netlify.app/docdash")
+        self.assertEqual(self.driver.current_url, "https://onlineehrproj.netlify.app/docdash")
    
     def test_drinvalidlogin(self):
         self.driver = webdriver.Firefox()
-        self.driver.get("https://xenodochial-gates-c9614f.netlify.app/sign-in") 
+        self.driver.get("https://onlineehrproj.netlify.app/sign-in") 
         time.sleep(1)
         userid=self.driver.find_element_by_xpath('//*[@id="name"]')
         userid.send_keys("aishwarya@gmail.com")
@@ -35,7 +35,7 @@ class login(unittest.TestCase):
         signin.click()
         time.sleep(2)
   
-        self.assertEqual(self.driver.current_url, "https://xenodochial-gates-c9614f.netlify.app/docdash")
+        self.assertEqual(self.driver.current_url, "https://onlineehrproj.netlify.app/docdash")
 
           
        
