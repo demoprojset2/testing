@@ -56,9 +56,6 @@ class TestConfig:
         with pytest.raises(ValueError):
             settingsObj.elastic_major_version
 
-    # def test_postgresql_url(self,settingsObj):
-
-    #     pass
 
     # @patch("arkham.config.Token")
     # def test_load_settings(self,patched_token,settingsObj):
